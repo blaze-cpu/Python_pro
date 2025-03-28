@@ -1,0 +1,12 @@
+import random
+
+pw = '"+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+
+lc = int(input('longitud de la contraseña'))
+
+contrasena = ''
+
+for _ in range(lc):
+
+    contrasena += random.choice(pw)
+print(f'tu contraseña es {contrasena}')
